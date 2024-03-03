@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>You Meal - Сочные бургеры</title>
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="wrap">
+        <a class="logo-link" href="#"
+          ><img src="./img/icon/logo/logo.svg" alt=""
+        /></a>
+        <div class="header-hero">
+          <img
+            src="./img/icon/logo/logo-img.svg"
+            alt=""
+            width="254"
+            height="290"
+            class="header-hero--logo" />
+          <div class="header-hero-top">
+            <h1 class="header-hero-top--descr">
+              Только самые <span>сочные бургеры!</span>
+            </h1>
+            <p class="header-hero-top--text">Бесплатная доставка от 599₽</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrap">
+        <nav class="nav-menu">
+          <ul class="nav-menu-list">
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn active" id="burgers">
+                Бургеры
+              </button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="snacks">Закуски</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="hotdogs">Хот-доги</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="combo">Комбо</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="shawerma">Шаурма</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="pizza">Пицца</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="wok">Вок</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="dessert">Десерты</button>
+            </li>
+            <li class="nav-menu-list--item">
+              <button class="nav-menu-list--btn" id="sauces">Соусы</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="wrap">
+        <div class="grid">
+          <div class="grid-col1">
+            <article class="cart">
+              <header class="cart-header">
+                <h2 class="cart-title">Корзина</h2>
+                <span class="cart-qnt">0</span>
+              </header>
+              <!-- Когда корзина пуста -> <p class="cart-descrp">Тут пока пусто :(</p> -->
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <div class="menu-list-item--descr">
+                    <h3 class="menu-list-item--title">Мясная бомба</h3>
+                    <p class="menu-list-item--price">689</p>
+                    <p class="menu-list-item--length">520</p>
+                  </div>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <div class="menu-list-item--btn-wrap">
+                    <!-- <button class="btn menu-list-item--btn"></button> -->
+                    <button class="btn btn-increment">-</button>
+                    <span class="menu-list-item--btn-qtn">1</span>
+                    <button class="btn btn-decrement">+</button>
+                  </div>
+                </li>
+                <li class="menu-list-item">
+                  <div class="menu-list-item--descr">
+                    <h3 class="menu-list-item--title">Мясная бомба</h3>
+                    <p class="menu-list-item--price">689</p>
+                    <p class="menu-list-item--length">520</p>
+                  </div>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <div class="menu-list-item--btn-wrap">
+                    <!-- <button class="btn menu-list-item--btn"></button> -->
+                    <button class="btn btn-increment">-</button>
+                    <span class="menu-list-item--btn-qtn">1</span>
+                    <button class="btn btn-decrement">+</button>
+                  </div>
+                </li>
+              </ul>
+              <footer class="cart-footer">
+                <div class="cart-footer-total">
+                  <p class="cart-footer-total--title">Итого</p>
+                  <p class="cart-footer-total--sum">1279</p>
+                </div>
+                <button class="btn cart-footer--btn">Оформить заказ</button>
+                <p class="cart-footer--delivery">Бесплатная доставка</p>
+              </footer>
+            </article>
+          </div>
+          <div class="grid-col3">
+            <section class="menu">
+              <h2 class="menu--title">Бургеры</h2>
+              <ul class="menu-list grid-nested">
+                <li class="menu-list-item grid-col1">
+                  <div class="menu-list-item--descr">
+                    <h3 class="menu-list-item--title">Мясная бомба</h3>
+                    <p class="menu-list-item--price">689</p>
+                    <p class="menu-list-item--length">520</p>
+                  </div>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <div class="menu-list-item--btn-wrap">
+                    <!-- <button class="btn menu-list-item--btn"></button> -->
+                    <button class="btn btn-increment">-</button>
+                    <span class="menu-list-item--btn-qtn">1</span>
+                    <button class="btn btn-decrement">+</button>
+                  </div>
+                </li>
+                <li class="menu-list-item grid-col1">
+                  <h3 class="menu-list-item--title">Мясная бомба</h3>
+                  <p class="menu-list-item--price">689</p>
+                  <p class="menu-list-item--length">520</p>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <button class="btn menu-list-item--btn">Добавить</button>
+                </li>
+                <li class="menu-list-item grid-col1">
+                  <h3 class="menu-list-item--title">Мясная бомба</h3>
+                  <p class="menu-list-item--price">689</p>
+                  <p class="menu-list-item--length">520</p>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <button class="btn menu-list-item--btn">Добавить</button>
+                </li>
+                <li class="menu-list-item grid-col1">
+                  <h3 class="menu-list-item--title">Мясная бомба</h3>
+                  <p class="menu-list-item--price">689</p>
+                  <p class="menu-list-item--length">520</p>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <button class="btn menu-list-item--btn">Добавить</button>
+                </li>
+                <li class="menu-list-item grid-col1">
+                  <h3 class="menu-list-item--title">Мясная бомба</h3>
+                  <p class="menu-list-item--price">689</p>
+                  <p class="menu-list-item--length">520</p>
+                  <div class="menu-list-item--img-wrap">
+                    <img
+                      class="menu-list-item--img"
+                      src="./img/menu/burgers/0a584eb768f64b7e4fcef360bef44f53.jpg"
+                      alt="" />
+                  </div>
+                  <button class="btn menu-list-item--btn">Добавить</button>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
