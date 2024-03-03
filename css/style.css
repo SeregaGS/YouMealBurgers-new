@@ -285,6 +285,12 @@ height: 40px; */
 .menu-list-item--btn-wrap .btn-decrement {
   width: auto;
 }
+.btn-increment:hover {
+  background-color: var(--color-lightgray);
+}
+.btn-decrement:hover {
+  background-color: var(--color-lightgray);
+}
 .btn-decrement {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -367,12 +373,6 @@ height: 40px; */
 }
 .cart .menu-list-item--btn-qtn {
   padding: 9px;
-}
-.cart .btn-increment:hover {
-  background-color: var(--color-lightgray);
-}
-.cart .btn-decrement:hover {
-  background-color: var(--color-lightgray);
 }
 
 /* CART FOOTER */
