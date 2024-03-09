@@ -158,6 +158,7 @@ body {
   border: none;
   display: block;
   background-color: var(--light-color);
+  color: var(--main-color-3);
   padding: 9px 15px;
   padding-left: calc(14px + 30px);
   border-radius: 50px;
@@ -261,21 +262,12 @@ height: 40px; */
 .menu-list-item--length::after {
   content: "г";
 }
-.menu-list-item--img-wrap {
-  width: 276px;
+.menu-list-item--img {
+  max-width: 100%;
   height: 220px;
-  overflow: hidden;
   order: -2;
   border-radius: 12px;
   margin-bottom: 16px;
-  position: relative;
-}
-.menu-list-item--img {
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .menu-list-item--btn-wrap {
   background-color: var(--main-color-5);
@@ -358,7 +350,7 @@ height: 40px; */
   order: -1;
   margin-bottom: 6px;
 }
-.cart .menu-list-item--img-wrap {
+.cart .menu-list-item--img {
   width: 64px;
   height: 52px;
   margin-bottom: 0;
@@ -590,13 +582,11 @@ height: 40px; */
 .popup-delivery-hero {
   background-color: var(--main-color-1);
 }
-
 .popup-delivery-wrap,
 .popup-delivery-hero {
   width: 50%;
   padding: 24px;
 }
-
 .popup-delivery-wrap .popup-header {
   margin-bottom: 16px;
 }
@@ -654,7 +644,6 @@ height: 40px; */
 .popup-delivery-form--delivery label:last-of-type {
   margin-bottom: 16px;
 }
-
 .popup-delivery-form--delivery input[type="radio"] {
   appearance: none;
   width: 12px;
@@ -692,4 +681,58 @@ height: 40px; */
 .popup-delivery-form-btn {
   background-color: var(--main-color-2);
   color: var(--light-colorgit);
+}
+
+/* WIDTH  1024PX */
+
+@media (max-width: 1024px) {
+  /* GRID TEMPLATE */
+  .wrap {
+    max-width: calc(100vw - (32px * 2));
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-col3 {
+    grid-column: span 2;
+  }
+  .grid-nested {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-main .grid-col2 {
+    grid-column: span 1;
+  }
+  /* HEADER MAIN */
+  .header-main::after {
+    min-width: 170%;
+  }
+  .logo-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .logo-link img {
+    max-width: 100%;
+    display: block;
+  }
+  .header-hero--logo {
+    width: 253px;
+    height: 290px;
+    margin-right: 38px;
+  }
+  /* FOOTER */
+  .footer-main .logo-link {
+    max-height: inherit;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .footer-main .logo-link img {
+    height: 58px;
+  }
+  .footer-main-phone,
+  .footer-main-social {
+    margin-left: 32%;
+  }
 }
