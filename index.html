@@ -68,7 +68,7 @@
         <div class="grid">
           <div class="grid-col1 grid-md-col2">
             <div class="cart-wrap">
-              <article class="cart" onclick="clickCartFull()">
+              <article class="cart"">
                 <header class="cart-header">
                   <h2 class="cart-title">Корзина</h2>
                   <span class="cart-qnt">0</span>
@@ -344,19 +344,5 @@
          -->
     <!-- </section>
     </div> -->
-    <script>
-      "use strict";
-      document.querySelector(".cart").onclick = clickCartFull;
-
-      function clickCartFull() {
-        let clickfullcart = document.querySelector(".cart-full");
-
-        if (clickfullcart.style.display === "block") {
-          clickfullcart.style.display = "none";
-        } else {
-          clickfullcart.style.display = "block";
-        }
-      }
-    </script>
   </body>
 </html>
