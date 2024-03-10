@@ -87,8 +87,10 @@ body {
   text-align: center;
   position: relative;
   margin-bottom: 40px;
+  overflow-x: hidden;
 }
 .header-main::after {
+  overflow-x: hidden;
   content: "";
   min-width: 110%;
   height: 900px;
